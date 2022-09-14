@@ -1,12 +1,10 @@
 const express = require('express');
 const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hal Jordan');
-});
+app.use('/', require('./routes'))
 
-// Listen to the App Engine-specified port, or 8080 otherwise
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}...`);
+
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}...`);
 });
