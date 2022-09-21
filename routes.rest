@@ -10,3 +10,18 @@ GET http://localhost:8080/contacts?id=632a2cbdcf35867e3036b412
 
 ### Get 3rd contact
 GET http://localhost:8080/contacts?id=632a2cbdcf35867e3036b413
+
+// PRODUCTION BUILD
+
+### Get all contacts
+GET http://https://yazzie341test.onrender.com/contacts
+
+### Get 1st contact
+GET http://https://yazzie341test.onrender.com/contacts?id=632a2cbdcf35867e3036b411
+
+### Get 2nd contact
+GET http://https://yazzie341test.onrender.com/contacts?id=632a2cbdcf35867e3036b412
+
+### Get 3rd contact
+GET http://https://yazzie341test.onrender.com/contacts?id=632a2cbdcf35867e3036b413
+
