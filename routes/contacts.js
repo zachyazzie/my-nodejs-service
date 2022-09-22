@@ -3,7 +3,7 @@ const router = express.Router();
 const contactController = require('../controllers/contacts')
 
 
-router.get('/contacts', contactController.getAllContacts)
+router.get('/', contactController.getContacts)
 
 
 module.exports = router;
