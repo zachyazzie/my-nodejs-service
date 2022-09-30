@@ -22,15 +22,14 @@ async function getOneContact(req, res) {
 
 //SUBMITS A POST
 async function createContact(req, res) {
-  const post = new Post({
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    email: req.body.email,
-    favoriteColor: req.body.favoriteColor,
-    birthday: req.body.birthday,
-  });
-
   try {
+    const post = new Post({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      favoriteColor: req.body.favoriteColor,
+      birthday: req.body.birthday,
+    });
     const savedPost = await post.save();
     res.status(201).json(savedPost);
   } catch (err) {
