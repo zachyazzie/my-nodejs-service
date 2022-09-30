@@ -35,28 +35,28 @@ DELETE http://localhost:8080/contacts/63364092bbdedefc9c4fa6b1 HTTP/1.1
 GET https://yazzie341test.onrender.com/contacts
 
 ### Get 1st contact
-GET https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd43
+GET https://yazzie341test.onrender.com/contacts/63365200b2356056f25c3ba9
 
 ### Get 2nd contact
-GET https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd44
+GET https://yazzie341test.onrender.com/contacts/6336130977683801307cdd54
 
 ### Get 3rd contact
-GET https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd45
+GET https://yazzie341test.onrender.com/contacts/6336132e23c1d85d2635d606
 
 ### POST contact
 POST https://yazzie341test.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-"firstName":"Harry", "lastName":"Potter", "email":"slytherinsucks@hogwarts.com", "favoriteColor":"Crimson", "birthday":"07/31/1980"
+"firstName":"James", "lastName":"Kirk", "email":"captainK@USSenterprise.com", "favoriteColor":"Yellow", "birthday":"03/22/2233"
 }
 
 ### PUT contact
-PUT https://yazzie341test.onrender.com/6335f9e877683801307cdd45 HTTP/1.1
+PUT https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd45 HTTP/1.1
 content-type: application/json
 
 {
 "firstName":"Luke", "lastName":"Skywalker", "email":"farmboy@tatooine.com", "favoriteColor":"Green", "birthday":"09/25/1951"
 }
 ### DELETE contact
-DELETE https://yazzie341test.onrender.com/6335fe4e7a7d0b8998b786da HTTP/1.1
+DELETE https://yazzie341test.onrender.com/contacts/6336519eb2356056f25c3ba1 HTTP/1.1
