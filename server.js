@@ -10,13 +10,10 @@ app.use(bodyParser.json()).use('/', require('./routes'));
 
 //Connect to DB
 
-console.log(typeof process.env.MONGO_URI);
-
 mongoose
   .connect(process.env.MONGO_URI)
 
   .then(() => {
-    console.log(typeof process.env.MONGO_URI);
     app.listen(port);
     console.log(`Connected to DB and listening on ${port}`);
   })
