@@ -27,7 +27,7 @@ content-type: application/json
 "firstName":"Luke", "lastName":"Skywalker", "email":"farmboy@tatooine.com", "favoriteColor":"Green", "birthday":"09/25/1951"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/6336396151a419c2b5f81ff5 HTTP/1.1
+DELETE http://localhost:8080/contacts/63364092bbdedefc9c4fa6b1 HTTP/1.1
 
 // PRODUCTION BUILD
 
