@@ -3,13 +3,31 @@
 GET http://localhost:8080/contacts
 
 ### Get 1st contact
-GET http://localhost:8080/contacts?id=632a2cbdcf35867e3036b411
+GET http://localhost:8080/contacts/6336130977683801307cdd53
 
 ### Get 2nd contact
-GET http://localhost:8080/contacts?id=632a2cbdcf35867e3036b412
+GET http://localhost:8080/contacts/6336130977683801307cdd54
 
 ### Get 3rd contact
-GET http://localhost:8080/contacts?id=632a2cbdcf35867e3036b413
+GET http://localhost:8080/contacts/6336132e23c1d85d2635d606
+
+### POST contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Harry", "lastName":"Potter", "email":"slytherinsucks@hogwarts.com", "favoriteColor":"Crimson", "birthday":"07/31/1980"
+}
+
+### PUT contact
+PUT http://localhost:8080/contacts/633637989fb8f301a59b7086 HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Luke", "lastName":"Skywalker", "email":"farmboy@tatooine.com", "favoriteColor":"Green", "birthday":"09/25/1951"
+}
+### DELETE contact
+DELETE http://localhost:8080/contacts/6336396151a419c2b5f81ff5 HTTP/1.1
 
 // PRODUCTION BUILD
 
@@ -17,11 +35,28 @@ GET http://localhost:8080/contacts?id=632a2cbdcf35867e3036b413
 GET https://yazzie341test.onrender.com/contacts
 
 ### Get 1st contact
-GET https://yazzie341test.onrender.com/contacts?id=632a2cbdcf35867e3036b411
+GET https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd43
 
 ### Get 2nd contact
-GET https://yazzie341test.onrender.com/contacts?id=632a2cbdcf35867e3036b412
+GET https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd44
 
 ### Get 3rd contact
-GET https://yazzie341test.onrender.com/contacts?id=632a2cbdcf35867e3036b413
+GET https://yazzie341test.onrender.com/contacts/6335f9e877683801307cdd45
 
+### POST contact
+POST https://yazzie341test.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Harry", "lastName":"Potter", "email":"slytherinsucks@hogwarts.com", "favoriteColor":"Crimson", "birthday":"07/31/1980"
+}
+
+### PUT contact
+PUT https://yazzie341test.onrender.com/6335f9e877683801307cdd45 HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Luke", "lastName":"Skywalker", "email":"farmboy@tatooine.com", "favoriteColor":"Green", "birthday":"09/25/1951"
+}
+### DELETE contact
+DELETE https://yazzie341test.onrender.com/6335fe4e7a7d0b8998b786da HTTP/1.1
