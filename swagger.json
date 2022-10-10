@@ -1,16 +1,23 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Temples API",
-    "description": "Description for Temples API Stuff goes here",
+    "title": "Contacts API",
+    "description": "Test Contacts API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "localhost:10000",
   "basePath": "/",
   "schemes": [
     "http"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/contacts/": {
       "get": {
         "description": "",
