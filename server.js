@@ -1,13 +1,20 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 const dotenv = require('dotenv');
 dotenv.config();
 const port = process.env.PORT || 8080;
 
-app.use(bodyParser.json()).use('/', require('./routes'));
-
+app
+  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+  .use(cors())
+  .use(express.json())
+  .use(express.urlencoded({ extended: true }))
+  .use('/', require('./routes'));
 //Connect to DB
 
 mongoose
